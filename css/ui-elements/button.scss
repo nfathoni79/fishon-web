@@ -1,0 +1,55 @@
+.btn {
+    border-radius:6px;
+    &.btn-lg {
+        padding: .8rem 1.8rem;
+        font-size:16px;
+    }
+}
+
+.btn-primary {
+    background:$primary-color;
+    box-shadow:none;
+    border-color:$primary-color;
+    font-family: $base-font-medium;
+    &:hover {
+        background:darken($primary-color,8%);
+        outline:none;
+        border-color:darken($primary-color,8%);
+    }
+    &:active {
+        background:darken($primary-color,14%);
+        outline:none;
+        border-color:darken($primary-color,14%);
+    }
+    &:not(:disabled):not(.disabled):active {
+        background:darken($primary-color,14%);
+        outline:none;
+        box-shadow:none;
+        border-color:darken($primary-color,14%);
+    }
+}
+
+.btn-secondary {
+    background:$col-green;
+    box-shadow:none;
+    color:#5B622B;
+    font-family: $base-font-medium;
+    border-color:$col-green;
+    &:hover {
+        background:darken($col-green,8%);
+        outline:none;
+        border-color:$col-green;
+        color:#5B622B;
+    }
+    &:active {
+        background:darken($col-green,14%);
+        outline:none;
+        border-color:darken($col-green,14%);
+        color:#5B622B;
+    }
+    &:not(:disabled):not(.disabled):active {
+        background:darken($col-green,14%);
+        outline:none;
+        box-shadow:none;
+    }
+}

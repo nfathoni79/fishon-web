@@ -1,0 +1,30 @@
+.form-control {
+    font-family: $base-font-medium;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $txt-placeholder !important;
+    opacity:.3;
+    font-family: $base-font-light;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: $txt-placeholder  !important ;
+    opacity:.3;
+    font-family: $base-font-light;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: $txt-placeholder  !important;
+    opacity:.3;
+    font-family: $base-font-light;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: $txt-placeholder  !important;
+    opacity:.3;
+    font-family: $base-font-light;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: $primary-color;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+}

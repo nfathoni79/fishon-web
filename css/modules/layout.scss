@@ -1,0 +1,216 @@
+.wrapper-page {
+    overflow:hidden;
+    width:100%;
+}
+section {
+    .title-section {
+        color:#45545b;
+    }
+}
+section.header {
+    position:relative;
+}
+section.featured-grid {
+    padding:120px 0;
+
+
+    .title-section {
+        margin-bottom:15px;
+    }
+
+    
+   
+    .content-featured {
+        position:relative;
+    }
+    .video-featured {
+        width:80%;
+        height:240px;
+        background:#A8DBE9;
+        margin-right:48px;
+        /* Rectangle 2: */
+        background: #A8DBE9;
+        box-shadow: 0 26px 56px -13px rgba(48,101,116,0.26);
+    }
+    .img-featured {
+        width:100%;
+        height:auto;
+        
+        margin-right:48px;
+        /* Rectangle 2: */
+      
+       
+        .wrapper-img {
+            width:100%;
+            img {
+                width:100%;
+            }
+        }
+    }
+    .desc-featured {
+        width:480px;
+        /* Fishon adalah sebuah: */
+        font-size: 16px;
+        color: #447C92;
+        line-height: 33px;
+        p {
+            margin-bottom:15px;
+        }
+    }
+
+    .wave-2 {
+        position: absolute;
+        left:-50%;
+        top:-110%;
+        z-index:-1;
+        width:1050px;
+        height:619px;
+        transform:scale(.9,.9);
+        background-image: url(../img/bg-wave-2.png);
+    }
+
+    
+    @media screen and (min-width:1440px) {
+        .wave-2 {
+            left:-50%;
+            top:-110%;
+        }
+    }
+    @media screen and (min-width:1920px) {
+        .wave-2 {
+            left:-50%;
+            top:-110%;
+        }
+    }
+    @media screen and (min-width:2048px) {
+        .wave-2 {
+            top:-110%;
+            left:-50%;
+        }
+    }
+}
+
+section.normal-grid {
+    padding:120px 0;
+
+
+    .title-section {
+        margin-bottom:48px;
+    }
+}
+
+
+section.footer {
+    padding:64px 0;
+  .title-footer {
+      color:$primary-color;
+      font-size:18px;
+      font-family: $base-font-medium;
+      margin-bottom:15px;
+  }
+  .wrapper-socmed {
+      margin-bottom:20px;
+      ul {
+          li {
+              display:inline-block;
+              margin-right:8px;
+              vertical-align:middle;
+              a {
+                  padding:10px;
+                  width:48px;
+                  height:48px;
+                  display: inline-block;
+                  text-align:center;
+                  color:#45545b;
+                  background: #F6F6F6;
+                  border-radius:100px;
+                  transition:all ease .3s;
+
+  
+                  &:hover {
+                      background:darken(#F6F6F6,10%);
+                  }
+                  
+              }
+          }
+      }
+  }
+  .wrapper-menu-footer {
+      padding-bottom:32px;
+      
+  }
+  .menu-footer {
+      ul {
+          li {
+              a {
+                  padding:8px 0;
+                  color:$txt-col-1;
+                  display: block;
+
+              }
+          }
+      }
+  }
+
+  .mini-footer {
+      p {
+          font-size:14px;
+          opacity: .5;;
+      }
+  }
+  
+
+  
+}
+.wrapper-global-header {
+    position:relative;
+    .global-page {
+        position:relative;
+        padding:84px 15px;
+        .wave-global-1 {
+            position: absolute;
+            background-image: url(../img/wave-global-1.png);
+            width: 500px;
+            height: 394px;
+            top: 10%;
+            left: -30%;
+            z-index: -1;
+            transform:rotate(0);
+        }
+        .wave-global-2 {
+            position: absolute;
+            background-image: url(../img/wave-global-2.png);
+            width: 1023px;
+            height: 1095px;
+            top: -180%;
+            right: -30%;
+            z-index: -1;
+            transform: rotate(0deg);
+            
+        }
+
+        @media screen and (max-width:992px) {
+            .wave-global-2 {
+                right: -100%;
+            }
+        }
+        @media screen and (max-width:768px) {
+            .wave-global-1 {
+                left: -60%;
+                top: -40%;
+            }
+            .wave-global-2 {
+                right: -150%;
+                top: -220%;
+            }
+        }
+
+    }
+    .wrapper-produk-header {
+        padding:72px 0;
+    }
+   
+}
+section.page-content {
+    padding:84px 15px;
+}

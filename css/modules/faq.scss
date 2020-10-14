@@ -1,0 +1,29 @@
+.wrapper-faq {
+    .card {
+        border:none !important;
+        background:none;
+
+        .card-header {
+            background:none;
+            padding-left:0;
+            border-bottom:1px dotted rgba(0, 0, 0, 0.125);
+
+            .btn.btn-link {
+                padding-left:0;
+                font-size:20px;
+                color:$primary-color;
+                text-decoration: none;
+                font-family: $base-font-medium;
+
+                &:hover, &:visited {
+                    text-decoration: none;
+                }
+
+            }
+        }
+
+        .card-body {
+            padding-left:0;
+        }
+    }
+}

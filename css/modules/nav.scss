@@ -1,0 +1,220 @@
+nav {
+    width:100%;
+    background:transparent;
+    position: relative;
+    width:100%;
+    
+    transition:all ease .3s;
+    z-index:9999;
+
+
+    .nav-menu {
+        li {
+            a {
+                &:hover {
+                    color:$txt-col-primary;
+                    font-family:$base-font-medium;
+                }
+            }
+        }
+    }
+
+    .menu-toggle {
+        .fa-times {
+            color:#fff !important;
+        }
+    }
+
+    &.scrolled {
+        transition:all ease .3s;
+        background:rgba(255,255,255,.8);
+
+        .nav-menu {
+            li {
+                a {
+                    color:#45545b;
+                   
+                    padding:24px 20px;
+
+                   
+                }
+
+                &.active {
+                    a {
+                        border-bottom:2px solid #216AA7;
+                        color:#216AA7;
+                    }
+                }
+            }
+        }
+
+        .menu-toggle {
+            .fa {
+                color:#45545b;
+
+                
+            }
+            
+        }
+    
+
+        &:before {
+            -webkit-box-shadow: 0px 30px 80px 0px rgba(255, 255, 255, 0.9);
+            -moz-box-shadow:    0px 30px 80px 0px rgba(255, 255, 255, 0.9);
+            box-shadow:         0px 30px 80px 0px rgba(255, 255, 255, 0.9);
+            position: absolute;
+            width: 150%;
+            height:54px;
+            background:transparent; 
+            top:-54;
+            content:"";
+            z-index:-10;
+        }
+    }
+}
+.wrapper-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo {
+    
+    margin:20px 32px 20px 0;
+    
+    
+    background-repeat:no-repeat;
+
+    img {
+        width:48px;
+        height:48px;
+    }
+}
+.logo_black {
+    background-image: url(../../img/logo_black.png);
+}
+.menu {
+    float:left;
+}
+.menu-toggle {
+    display:none;
+    padding:20px 20px;
+    font-size:24px;
+    cursor:pointer;
+    .fa {
+        color:$txt-col-1;
+    }
+    
+}
+.nav-menu {
+    width:auto;
+    
+    li {
+        list-style-type:none;
+        float:left;
+
+        &.active {
+            a {
+                border-bottom:2px solid #fff;
+                color:#fff;
+            }
+        }
+
+        a {
+            padding:24px 20px;
+            display: inline-block;
+            vertical-align:middle;
+            color:$txt-col-1;
+            font-size:14px;
+            text-align:center;
+            text-decoration:none;
+            text-transform: uppercase;
+            letter-spacing:1px;
+            font-family: $base-font-reg;
+            transition:all ease .3s;
+        }
+    }
+}
+.side-menu {
+    
+    width:40%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:-40%;
+    transition:all ease .3s;
+    
+    bottom:0;
+    background:rgba(255,255,255,1);
+    z-index:9999999;
+
+    &.toggled-minimized {
+        left:0;
+        display: block;
+        transition:all ease .3s;
+    }
+    .close-menu {
+        float:right;
+        padding:20px;
+        color:#fff;
+        transition:all ease .3s;
+        cursor:pointer;
+        position:absolute;
+        top:0;
+        right:0;
+        z-index:9999;
+        &:hover {
+            background:rgba(255,255,255,.4);
+            
+        }
+    }
+    
+   .menu-list {
+    display:flex;
+    align-items: center;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+       
+       ul {
+            width:100%;
+            margin:0;
+            padding:0;
+           li {
+               list-style-type: none;
+               a {
+                   text-align:left;
+                   display:block;
+                   padding:20px 32px;
+                   color:#fff;
+                   font-size:24px;
+                   text-decoration:none;
+                   color:#45545b;
+                   transition:all ease .3s;
+                   font-family: $base-font-medium;
+
+                   &:hover {
+                    background: $primary-color;
+                       color:#fff;
+                   }
+               }
+           }
+       }
+   }
+    
+}
+
+.overlay-sidebar {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1200;
+}

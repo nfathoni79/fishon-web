@@ -1,0 +1,33 @@
+.page-about {
+    .wrapper-list-board {
+        .list-board {
+            text-align:left;
+            padding:32px 0;
+
+            .wrapper-img {
+                border-radius:8px;
+                overflow:hidden;
+                width:60%;
+                display: block;
+                // margin:0 auto;
+                margin:0 0 20px 0;
+                height:auto;
+                img {
+                    width:100%;
+                    height:auto;
+                }
+            }
+
+            .board-name {
+                font-size:20px;
+                font-family: $base-font-medium;
+                
+            }
+
+            .board-position {
+                font-size:16px;
+                font-family: $base-font-light;
+            }
+        }
+    }
+}
