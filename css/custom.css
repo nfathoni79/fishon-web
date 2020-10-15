@@ -1,0 +1,25 @@
+.logo img {
+    width: 48px;
+    height: auto;
+}
+
+.main-text ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.wrapper-backdrop-header .main-backdrop img {
+    position: absolute;
+    right: -10%;
+    top: 10%;
+    width: auto;
+    z-index: -9999;
+}
+
+.sec-main-feature img {
+    width: 100%;
+}
+
+.wrapper-backdrop-header {
+    padding-top: 40px;
+}
